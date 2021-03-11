@@ -1,0 +1,125 @@
+body {
+    background-color: #000000;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.inside-boxes {
+    display: flex;
+    background-color: #13b476;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: background-color 3s ease 300ms;
+    transition: transform 1s;
+}
+
+.inside-boxes:hover {
+    background-color: #1359b4;
+    transform: scale(0.9) translate(10px, 10px) rotate(180deg);
+}
+
+.inside-boxes2 {
+    display: flex;
+    background-color: #13b476;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    transition: background-color 3s ease 300ms;
+    transition: transform 1s;
+}
+
+.inside-boxes2:hover {
+    background-color: #b4133b;
+    transform: scale(0.9) translate(-10px, -10px) rotate(-180deg);
+}
+
+.inner-box {
+    background-color: #0a6b46;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: auto;
+    transition: background-color 3s ease 300ms;
+    transition: transform 1s;
+}
+
+.inner-box2 {
+    background-color: #83b6a3;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: auto;
+    transition: background-color 3s ease 300ms;
+    transition: transform 1s;
+}
+
+.inner-box:hover {
+    background-color: #8398b3;
+    transform: scale(0.9) rotate(180deg);
+}
+
+.inner-box2:hover {
+    background-color: #b38490;
+    transform: scale(0.9) rotate(180deg);
+}
+
+@media only screen and (max-width: 420px) {
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    .inside-boxes {
+        display: flex;
+        background-color: #13b476;
+        width: 40%;
+        height: 150px;
+        border-radius: 10px;
+        margin: 10px;
+        transition: background-color 3s ease 300ms;
+        transition: transform 1s;
+    }
+
+    .inside-boxes2 {
+        display: flex;
+        background-color: #13b476;
+        width: 40%;
+        height: 150px;
+        border-radius: 10px;
+        margin: 10px;
+        transition: background-color 3s ease 300ms;
+        transition: transform 1s;
+    }
+
+    .inner-box {
+        background-color: #0a6b46;
+        width: 50%;
+        height: 75px;
+        border-radius: 10px;
+        margin: auto;
+        transition: background-color 3s ease 300ms;
+        transition: transform 1s;
+    }
+    
+    .inner-box2 {
+        background-color: #83b6a3;
+        width: 50%;
+        height: 75px;
+        border-radius: 10px;
+        margin: auto;
+        transition: background-color 3s ease 300ms;
+        transition: transform 1s;
+    }
+
+}
